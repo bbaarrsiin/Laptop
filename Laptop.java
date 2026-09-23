@@ -4,6 +4,27 @@ public class Laptop
     private int kosten;
     private boolean neu;
     
+    public Laptop (String neuHersteller, int neuKosten, boolean neuNeu)
+    {
+        setHersteller(neuHersteller);
+        setKosten(neuKosten);
+        setNeu(neuNeu);
+    }
+    
+    public Laptop (String neuHersteller, boolean neuNeu)
+    {
+        setHersteller(neuHersteller);
+        setKosten(1000);
+        setNeu(neuNeu);
+    }
+    
+    public Laptop()
+    {
+        setHersteller("Lenova");
+        setKosten(1000);
+        setNeu(true);
+    }
+    
     public String getHersteller()
     
     {
@@ -18,5 +39,20 @@ public class Laptop
     public boolean getNeu()
     {
         return neu;
+    }
+    
+    public void setHersteller(String neuHersteller)
+    {
+        hersteller= neuHersteller;
+    }
+    
+    public void setKosten(int neuKosten)
+    {
+        kosten= neuKosten;
+    }
+    
+    public void setNeu(boolean neuNeu)
+    {
+        neu= neuNeu;
     }
 }
