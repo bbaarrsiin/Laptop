@@ -1,33 +1,22 @@
-
-/**
- * Beschreiben Sie hier die Klasse Laptop.
- * 
- * @author (Ihr Name) 
- * @version (eine Versionsnummer oder ein Datum)
- */
 public class Laptop
 {
-    // Instanzvariablen - ersetzen Sie das folgende Beispiel mit Ihren Variablen
-    private int x;
-
-    /**
-     * Konstruktor für Objekte der Klasse Laptop
-     */
-    public Laptop()
+    private String hersteller;
+    private int kosten;
+    private boolean neu;
+    
+    public String getHersteller()
+    
     {
-        // Instanzvariable initialisieren
-        x = 0;
+        return hersteller;
     }
-
-    /**
-     * Ein Beispiel einer Methode - ersetzen Sie diesen Kommentar mit Ihrem eigenen
-     * 
-     * @param  y    ein Beispielparameter für eine Methode
-     * @return        die Summe aus x und y
-     */
-    public int beispielMethode(int y)
+    
+    public int getKosten()
     {
-        // tragen Sie hier den Code ein
-        return x + y;
+        return kosten;
+    }
+    
+    public boolean getNeu()
+    {
+        return neu;
     }
 }
